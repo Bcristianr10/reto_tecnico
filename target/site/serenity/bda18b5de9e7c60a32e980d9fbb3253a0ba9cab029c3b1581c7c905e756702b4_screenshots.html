@@ -1,0 +1,284 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/v4-shims.min.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" type="text/css" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">
+<link rel="stylesheet" type="text/css" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.19/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.19/datatables.min.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.19/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.19/datatables.bootstrap4.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">Demo Project using Serenity and Cucumber</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="221985671395f8e6671bee712c889abef72f3196f5ff4270589c48a5aa478a80.html">Automation Technical Challenge</a></span>
+                > <span class="truncate-60"><a
+                    href="bda18b5de9e7c60a32e980d9fbb3253a0ba9cab029c3b1581c7c905e756702b4.html">Register a user </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 10-02-2022 21:37</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Automation Technical Challenge </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                automation challenge registering a user in Utest
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="e4ef4831a220e0a9cbdbfec794f5c31b3fef2adf1cb8126df1cc35a6f525969c.html">Scenario1
+                                    (tag)</a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="8e3b9bd5eba0a2d944ce7d2a73335e57289cd25f71e556e1618e946dc87d7ec9.html">Stories
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Register a user
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="0ffdf24c1757198887a3366c7150ddea76bdbb44afd6454ccd48a2920e72dd62.png" title=" Given Brandon wants to join the tester community" width="1920"/>
+                <img src="0ffdf24c1757198887a3366c7150ddea76bdbb44afd6454ccd48a2920e72dd62.png" title=" Brandon open up" width="1920"/>
+                <img src="0ffdf24c1757198887a3366c7150ddea76bdbb44afd6454ccd48a2920e72dd62.png" title=" brandon opens the U test page" width="1920"/>
+                <img src="0ffdf24c1757198887a3366c7150ddea76bdbb44afd6454ccd48a2920e72dd62.png" title=" Brandon open up (completed)" width="1920"/>
+                <img src="0ffdf24c1757198887a3366c7150ddea76bdbb44afd6454ccd48a2920e72dd62.png" title=" Given Brandon wants to join the tester community (completed)" width="1920"/>
+                <img src="22a3256b6c5e1165b384361559cea6c11222eea3f0a87fa85981163e67e11e32.png" title=" When fill in the fields of each section on the UTest page
+| strFirstName | strLastName | strEmail | strLanguage | strCity | strPostalCode | strCountry | strComputerOperatingSystem | strVersion | strComputerLanguage | strMobilDevice | strDeviceModel | strDeviceOperatingSystem | strPassword |
+| Brandon | Perez | bperez6@retotecnico.com | Spanish | Arraijan | 07003 | panama | windows | 10 64-bit | spanish | xiaomi | mi 9 | android 11 | ChoucairReto2021* |" width="1920"/>
+                <img src="22a3256b6c5e1165b384361559cea6c11222eea3f0a87fa85981163e67e11e32.png" title=" Brandon sign up personal" width="1920"/>
+                <img src="22a3256b6c5e1165b384361559cea6c11222eea3f0a87fa85981163e67e11e32.png" title=" brandon clicks on button that shows us the form to signup" width="1920"/>
+                <img src="04f9eb393087cf1ab8000d50dfe881f4d4488e942cc076f489c9b8be30f33353.png" title=" brandon enters 'Brandon' into write first name the user" width="1920"/>
+                <img src="5934a3547c410c7aaa5754b722d430fdcc719a52c54d411662df71d01395dcf2.png" title=" brandon enters 'Perez' into write last name the user" width="1920"/>
+                <img src="185c623b7f2adfecca8ffc13efa4fe0773e0e9afd8828d14a16a14fd814da2b5.png" title=" brandon enters 'bperez6@retotecnico.com' into write email the user" width="1920"/>
+                <img src="860f06832441563c753c89edfedd61dfa296c14d30c25023f1228bb6680ca71a.png" title=" brandon clicks on Select month his birth month" width="1920"/>
+                <img src="e2151d851215401fbb6c5b63201abde78b8d65b15afa84f6516b917db33c8573.png" title=" brandon clicks on Select month his birth day" width="1920"/>
+                <img src="996e4c343f305387ad433a9714db06a44e683bebbd2ae8a89106d6ba3d82026d.png" title=" brandon clicks on Select month his birth year" width="1920"/>
+                <img src="482ea572cb8a94fd76827960b536b2b0fd8d14d5722c85d8f386f1fdb5d901d1.png" title=" brandon enters 'Spanish' into Select language his birth year" width="1920"/>
+                <img src="0171498e5341ccf862314be4a2a1bde8d519c46585d81d6bd16e0d0c2332af69.png" title=" brandon types 'ENTER' in Select language his birth year" width="1920"/>
+                <img src="024ecc5f5ba9478c7cf55dbe209383a1768d315bddc4f78b287e72089dddf342.png" title=" brandon clicks on next page" width="1920"/>
+                <img src="7d964c99aa36d46d9c4c2245e527a87bb4505593852926a8e4cd36837b6c6d9f.png" title=" brandon enters 'Arraijan' into write to city" width="1920"/>
+                <img src="2e987a6bfd92110ca7d0fcd3f8d88c82677da7c0def1f8aa022ef462cc5113d5.png" title=" brandon types 'ARROW_DOWN' in write to city" width="1920"/>
+                <img src="f766033a24c7a1bbfc2aecc0aa6d391abfaaca3df87a7d22486be6dc701102cf.png" title=" brandon types 'ENTER' in write to city" width="1920"/>
+                <img src="88cd0ac7e61d92caf02d7b4b2fc1744eff935693aaf71010fc950caf3dcb0bf4.png" title=" brandon enters '07003' into enter postal code" width="1920"/>
+                <img src="1e8e65584b560c776763860baedfc4bc657e2f6a72b18f6d4306639f2112a71d.png" title=" brandon clicks on select input country" width="1920"/>
+                <img src="be21f29dec0d670820cd7ce1b5b95ee94d339544e3e103f51235d40a65f934c5.png" title=" brandon enters 'panama' into enter country" width="1920"/>
+                <img src="ea4b4448ef70dc9d12d643daac18024f94e020d42f17bb1e2f1a013a279defc2.png" title=" brandon types 'ARROW_DOWN' in enter country" width="1920"/>
+                <img src="453bfc366283727dc07b02f2cc8d77d5fc01193e254f9588b312cc8d6ea00b39.png" title=" brandon types 'ENTER' in enter country" width="1920"/>
+                <img src="94373b17259b195b5ac711bec64420d85b4baab5033b304fad3e37a2168eb8bb.png" title=" brandon clicks on following requirements" width="1920"/>
+                <img src="55c929bff3a5832c8798daec34901c2d24dd84778346c74cb5905c2d278eb0d9.png" title=" brandon clicks on select operating system of computer" width="1920"/>
+                <img src="1ff680b9eecb1c3262a948698d9480732eac500a898190a9c43473f5ca20a7ff.png" title=" brandon enters 'windows' into enter operating system of computer" width="1920"/>
+                <img src="aa921810c4287cc2bc1ec22c9bbc022939ffd151bb3d4710547a132167cf71f2.png" title=" brandon types 'ARROW_DOWN' in enter operating system of computer" width="1920"/>
+                <img src="26c268d6a123da7fbf0f474d9bffe6bb5dba46422fd7b2998857b38adabd820a.png" title=" brandon types 'ENTER' in enter operating system of computer" width="1920"/>
+                <img src="25fafd0bdeab2dafce3929629a467acd1d36abd07a8c1f90d3465bd99e758438.png" title=" brandon clicks on select operating system version of computer" width="1920"/>
+                <img src="31bf995790528f660f27ee9db67f4d3a18168c592ca06bec5abb54a80c2d36eb.png" title=" brandon enters '10 64-bit' into enter operating system version of computer" width="1920"/>
+                <img src="03ae21b8c892002ded383698a38421e989c147cdfb81361c9099ff62b4455916.png" title=" brandon types 'ARROW_DOWN' in enter operating system version of computer" width="1920"/>
+                <img src="2b0e40ce9e200ee4247c4f14ef22bdc9b5a9a18563af9a04327026b59ad7d9ca.png" title=" brandon types 'ENTER' in enter operating system version of computer" width="1920"/>
+                <img src="f4791f30d7a6b015dd7bd0cee89cc2994cd779be611081e88644df9d03ce6f39.png" title=" brandon clicks on select operating system language of computer" width="1920"/>
+                <img src="c1c30d55e9fe39f1898ae59d17515ac4106b574548c5aa8a63c93143b4fd3bc9.png" title=" brandon enters 'spanish' into enter operating system language of computer" width="1920"/>
+                <img src="b8660b36da2cb5bb763e189492bbe275916d0966a8de9057dd44937bfb0d63de.png" title=" brandon types 'ARROW_DOWN' in enter operating system language of computer" width="1920"/>
+                <img src="3fc1c236d2f232b3e20192bb335767a1530ca05cadf836770dca9da00a562a37.png" title=" brandon types 'ENTER' in enter operating system language of computer" width="1920"/>
+                <img src="b9a5164b1056acd940e334f10cb5607d4f59dc79df186fa04c346bf2c6244f94.png" title=" brandon clicks on select mobil device type" width="1920"/>
+                <img src="d8feb54c33e24a6eb2fa147846bf9eafae2c328819c01979c6922757bd1e97c0.png" title=" brandon enters 'xiaomi' into enter mobil device type" width="1920"/>
+                <img src="abd0c2014935e51e23c3b8e26f7f35e879f039f4fd0f7afea155a9d2eed72a48.png" title=" brandon types 'ARROW_DOWN' in enter mobil device type" width="1920"/>
+                <img src="5ebd0787a5ae7a97eaa499ba086db7c435278d42ecfa041fa0fe61ac5f7fc651.png" title=" brandon types 'ENTER' in enter mobil device type" width="1920"/>
+                <img src="80d825f1fd94af0e7a5af6ddd7e1bec525166ae92213a7d85b30303eda699245.png" title=" brandon clicks on select model type mobil device" width="1920"/>
+                <img src="2e632e6558f7091ff04f1a98f1677dfcb579364477c0d5f3711101b9e3ce82c2.png" title=" brandon enters 'mi 9' into enter model type mobil device" width="1920"/>
+                <img src="2e655d76b81555c46961fc387ef96f5c89a34284f949db326e132d1d5b8fac6f.png" title=" brandon types 'ARROW_DOWN' in enter model type mobil device" width="1920"/>
+                <img src="7aa3f43c342be7cd756413b4f44641ebbb21d51a6680b0b67f6ad74dda641767.png" title=" brandon types 'ENTER' in enter model type mobil device" width="1920"/>
+                <img src="212d873b44e147eb648baea5a527b639c8bdefd7e88bb52c83f06757e15d6948.png" title=" brandon clicks on select operative system of mobil device" width="1920"/>
+                <img src="0ddbe93a2ce58637baf0f444e4ba2bdd3e72c36322a02a83b6f18498e2e15e07.png" title=" brandon enters 'android 11' into enter system operative of mobil device" width="1920"/>
+                <img src="c0f06d68a7e0ea412f355ac7b1775f6cda696bc18cc3a142d7c49bf3b6c34392.png" title=" brandon types 'ARROW_DOWN' in enter system operative of mobil device" width="1920"/>
+                <img src="7a264c4ef60d14036e4e4193e77833469875b91125a787162ad33b7af5447636.png" title=" brandon types 'ENTER' in enter system operative of mobil device" width="1920"/>
+                <img src="0fbee4f40845c9e513b300240a71c435143fd204604dd27f6c111b8a597aa0ca.png" title=" brandon clicks on button to redirect next page" width="1920"/>
+                <img src="31a234ed8e3a675c0fba14272ee333b45897486ed3538404b36679f5ad2c7d39.png" title=" brandon enters 'ChoucairReto2021*' into Enter the password user" width="1920"/>
+                <img src="1ff4b971b493f6170f122e1d99caeb85d2707a294a41effce9390b9e9c545b66.png" title=" brandon enters 'ChoucairReto2021*' into Enter password confirmation" width="1920"/>
+                <img src="a2bc1863a3bb3085de33a50aeb10681eabf693fc413c4941f7089d41f97f60ad.png" title=" brandon clicks on check the option to accept to stay informed" width="1920"/>
+                <img src="81d256addb7dbd7b6cf8186a252943173d5c1a3406cc3ed50b3eeb83dd4d7363.png" title=" brandon clicks on check the option to accept the UTest Terms of user" width="1920"/>
+                <img src="06b6c35be9c7983d76955632a36dab017aaac4f853eb69792333a3e10c1f43bc.png" title=" brandon clicks on check the option to accept the privacy and security policy" width="1920"/>
+                <img src="e77013a03ffabdfbb797083f8f7bb26c3efe6af7dfc76373335a4380bbfc7596.png" title=" brandon clicks on press the button to complete add the form user" width="1920"/>
+                <img src="e77013a03ffabdfbb797083f8f7bb26c3efe6af7dfc76373335a4380bbfc7596.png" title=" Brandon sign up personal (completed)" width="1920"/>
+                <img src="e77013a03ffabdfbb797083f8f7bb26c3efe6af7dfc76373335a4380bbfc7596.png" title=" When fill in the fields of each section on the UTest page
+| strFirstName | strLastName | strEmail | strLanguage | strCity | strPostalCode | strCountry | strComputerOperatingSystem | strVersion | strComputerLanguage | strMobilDevice | strDeviceModel | strDeviceOperatingSystem | strPassword |
+| Brandon | Perez | bperez6@retotecnico.com | Spanish | Arraijan | 07003 | panama | windows | 10 64-bit | spanish | xiaomi | mi 9 | android 11 | ChoucairReto2021* | (completed)" width="1920"/>
+                <img src="a062d8ad4433d7f56b78874419a3b00790e0e074044dcd0b5a301da1885d066b.png" title=" Then successful registration
+| strConfirmWelcome |
+| Welcome to the world's largest community of freelance software testers! |" width="1920"/>
+                <img src="a062d8ad4433d7f56b78874419a3b00790e0e074044dcd0b5a301da1885d066b.png" title=" Then answer" width="1920"/>
+                <img src="a062d8ad4433d7f56b78874419a3b00790e0e074044dcd0b5a301da1885d066b.png" title=" Then successful registration
+| strConfirmWelcome |
+| Welcome to the world's largest community of freelance software testers! | (completed): <span class='success-color'>SUCCESS</span>" width="1920"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 2.0.90</span>
+</div>
+</body>
+</html>
