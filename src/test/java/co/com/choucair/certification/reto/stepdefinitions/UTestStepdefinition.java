@@ -2,8 +2,7 @@ package co.com.choucair.certification.reto.stepdefinitions;
 
 import co.com.choucair.certification.reto.model.UTestData;
 import co.com.choucair.certification.reto.questions.Answer;
-import co.com.choucair.certification.reto.tasks.OpenUp;
-import co.com.choucair.certification.reto.tasks.SignUpPersonal;
+import co.com.choucair.certification.reto.tasks.*;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -27,10 +26,16 @@ public class UTestStepdefinition {
 
     @When("^fill in the fields of each section on the UTest page$")
     public void fillInTheFieldsOfEachSectionOnTheUTestPage(List<UTestData> uTestData) throws Exception {
-        OnStage.theActorInTheSpotlight().attemptsTo(SignUpPersonal.thePage(
-                uTestData.get(0).getPersonalData(),uTestData.get(0).getPersonalLocation(),
-                uTestData.get(0).getDeviceData())
+
+
+        OnStage.theActorInTheSpotlight()
+                .attemptsTo(StepOne.thePage(uTestData.get(0).getPersonalData()),
+                            StepTwo.thePage(uTestData.get(0).getPersonalLocation()),
+                            StepThree.thePage(uTestData.get(0).getComputerData(),
+                                              uTestData.get(0).getMobileDeviceData()),
+                            StepFour.thePage(uTestData.get(0).getStrPassword())
         );
+
 
     }
 

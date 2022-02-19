@@ -8,7 +8,7 @@ Feature:Automation technical challenge
     Given Brandon wants to join the tester community
     When fill in the fields of each section on the UTest page
       |strFirstName|strLastName|strEmail              |strLanguage|strCity    |strPostalCode|strCountry|strComputerOperatingSystem|strVersion|strComputerLanguage|strMobilDevice|strDeviceModel|strDeviceOperatingSystem|strPassword      |
-      |Brandon        |Perez   |bperez6@retotecnico.com|Spanish    |Arraijan   |07003        |panama    |windows                   |10 64-bit |spanish            |xiaomi        |mi 9          |android 11              |ChoucairReto2021*|
+      |Brandon        |Perez   |bperez10@retotecnico.com|Spanish    |Arraijan   |07003        |panama    |windows                   |10 64-bit |spanish            |xiaomi        |mi 9          |android 11              |ChoucairReto2021*|
 
     Then successful registration
       |strConfirmWelcome|

@@ -1,13 +1,10 @@
 package co.com.choucair.certification.reto.model;
-
-import java.util.Objects;
-
 public class UTestData {
 
     private String strFirstName;
     private String strLastName;
     private String strEmail;
-    private String strPassword;
+
     private String strLanguage;
 
     private String strCity;
@@ -17,18 +14,22 @@ public class UTestData {
     private String strComputerOperatingSystem;
     private String strVersion;
     private String strComputerLanguage;
+
     private String strMobilDevice;
     private String strDeviceModel;
     private String strDeviceOperatingSystem;
 
     private String [] personalData;
     private String [] personalLocation;
-    private String [] deviceData;
+    private String [] computerData;
+    private String [] mobileDeviceData;
+    private String strPassword;
     private String strConfirmWelcome;
 
 
+
     public String[] getPersonalData() {
-        return new String[]{strFirstName, strLastName,strEmail, strLanguage,strPassword};
+        return new String[]{strFirstName, strLastName,strEmail, strLanguage};
     }
 
     public void setPersonalData(String[] datosPersonales) {
@@ -44,18 +45,29 @@ public class UTestData {
         this.personalLocation = personalLocation;
     }
 
-
-
-    public String[] getDeviceData() {
-        return new String[] {strComputerOperatingSystem,strVersion,strComputerLanguage,
-                strMobilDevice,strDeviceModel,strDeviceOperatingSystem};
+    public String[] getComputerData() {
+        return new String[] {strComputerOperatingSystem,strVersion,strComputerLanguage};
     }
 
-    public void setDeviceData(String[] deviceData) {
-        this.deviceData = deviceData;
+    public void setComputerData(String[] computerData) {
+        this.computerData = computerData;
     }
 
+    public String[] getMobileDeviceData() {
+        return new String[] {strMobilDevice,strDeviceModel,strDeviceOperatingSystem};
+    }
 
+    public void setMobileDeviceData(String[] mobileDeviceData) {
+        this.mobileDeviceData = mobileDeviceData;
+    }
+
+    public String getStrPassword() {
+        return strPassword;
+    }
+
+    public void setStrPassword(String strPassword) {
+        this.strPassword = strPassword;
+    }
 
     public String strConfirmWelcome() {
         return strConfirmWelcome;
@@ -64,4 +76,6 @@ public class UTestData {
     public void strConfirmWelcome(String strConfirmCheckPrivacy) {
         this.strConfirmWelcome = strConfirmCheckPrivacy;
     }
+
+
 }
